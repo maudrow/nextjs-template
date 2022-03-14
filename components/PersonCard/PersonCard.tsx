@@ -30,31 +30,12 @@ export const PersonCard: React.FC<PersonCardProps> = ({
 }) => {
   return (
     <>
-      <h1 className="text-3xl font-bold underline">
-        Hello world!
-      </h1>
+      <h1 className="text-3xl font-bold underline">Hello world!</h1>
 
-      <p>
-        Name: {name}
-      </p>
-      {
-        phoneNumber &&
-        <p>
-          Phone: {phoneNumber}
-        </p>
-      }
-      {
-        email &&
-        <p>
-          Email: {email}
-        </p>
-      }
-      {
-        birthday &&
-        <p>
-          Birthday: {birthday}
-        </p>
-      }
+      <p>Name: {name}</p>
+      {phoneNumber && <p>Phone: {phoneNumber}</p>}
+      {email && <p>Email: {email}</p>}
+      {birthday && <p>Birthday: {birthday}</p>}
     </>
   )
 }
